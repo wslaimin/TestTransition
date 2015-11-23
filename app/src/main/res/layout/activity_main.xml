@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"/>
+    <Button
+        android:id="@+id/scenes_from_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scenes from res"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/scenes_from_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scenes from code"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/add_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="addTarget"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/mutiple_transition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mutiple transition"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/without_scene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Without Scene"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/transition_listener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transition listener"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/custom_transition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom transition"
+        android:onClick="onClick"/>
+    <LinearLayout
+        android:id="@+id/scene_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            layout="@layout/a_scene"/>
+    </LinearLayout>
+
+
+</LinearLayout>
